@@ -1,0 +1,362 @@
+/* prevent adjustment of font size after orientation changes in IE on window phone and in iOS*/
+html{
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/*apply natural box layout on all elements*/
+*{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/*------------body-----------------*/
+body{
+    
+        font-family: $defaultfont;
+    
+        font-weight: $lightweight;
+        font-size:16px;// whenever if zoom in or zoom out it will take care the base font size
+        
+    }
+/*header*/
+header {
+    position: relative;
+     height: 80px;
+    color:$basefont-color;
+    font-family:$defaultfont;
+    background-color:$primarycolor;
+    border-bottom: 5px solid #312F2D;
+    
+    
+   padding: 1rem 4%;
+      position: relative;
+      h3,p{
+        margin:0px 0px 0px 25px;
+          padding-left: $gutter;
+          font-weight:$boldweight;
+          font-size: 20px;
+     }
+      figure.logo{
+  position: absolute;
+  
+  left: 3%;
+      }
+    
+     p{
+      color:#A9A9A9;
+        padding:0px 0px 0px 10px;
+      font-size:12px;
+      }
+    span{
+      color:#F9F7F4;
+      font-size:15px;
+      font-weight:$lightweight;
+    }
+  }
+   
+  nav{
+  .right-menu{
+    float:right;
+      position: absolute;
+  bottom:0;
+  right:220px;
+    top:10px;
+    margin:1px;
+    
+    }
+    
+     li a i{
+        
+      border:4px solid #312F2D;
+      border-radius:3px;
+      padding:11px;
+      color:#989288;
+    
+    }
+     
+    li{
+      display:inline-block;
+      list-style-type: none;
+      margin:4px;
+    }
+     .right-menu li:hover{
+      background-color:#423E3A;
+       border-radius:6px;
+    }
+    figure a img{
+    float: right;
+     height: 50px;
+     width:50px;
+     
+     }
+     .btn{
+       background-color: #312F2D;
+       color:white;
+       padding: 12px;
+     }
+     .user{
+position: absolute;
+bottom:0px;
+top:5px;
+right:6px;
+     }
+     #userdropdown{
+       margin-top:69px;
+       width:280px;
+     }
+  .user-title{
+    padding-left:29px;
+  }
+  .downlink  li  {
+    display: inline;
+  }
+  .downlink  li a {
+    
+    margin-right:10px;
+    text-decoration: none;
+    color:$basefont-color;
+  }
+
+    .downlink a i{
+      border: none;
+    }
+
+ 
+  
+  
+/* dropdown */   
+.changeview{
+ 
+
+    position:absolute;
+    bottom:0px;
+    top:1px;
+    left:165px;
+    
+}
+.dropdown-item{
+  margin:5px;
+}
+
+.right-link{
+  float:right;
+}
+.right-link i{
+  font-size: 10px;
+}
+#hightlight{
+  background-color: gold;
+  border-radius:3px;
+  font-size: 10px;
+  padding:2px;
+  color: $basefont-color;
+
+}
+
+
+.dropdown-menu{
+  color: $basefont-color;
+    width:350px;
+    height:300px;
+   margin-top:12px;
+   
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   border-radius:0px;
+   
+}
+.dot-border{
+border-style: dotted;
+margin-left:18px;
+margin-right:18px;
+}
+.dropdown-divider{
+  border-color: $basefont-color;
+  margin-left:18px;
+  margin-right:18px;
+}
+#dropdown-title{
+  font-weight: $boldweight;
+  padding-left:28px;
+}
+.links a{
+  display: inline;
+}
+
+#divider-title{
+  font-weight: $boldweight;
+}
+      
+  }
+  main{
+    .outerbanner{
+        border-radius:6px;
+      background-color:rgb(240, 240, 240);
+      margin:50px 50px;
+      h1,h4{
+        text-align:center;
+      }
+      h1{
+        padding-top:80px;
+        font-size:70px;
+      }
+      h4{
+        font-style: italic;
+        font-size:30px;
+      }
+      
+    }
+     figure.banner {
+      width: 90%;
+       margin:10px auto;
+       padding: 20px;
+       
+       
+    }
+    figure.banner img {
+    
+      width:100%;
+    
+    }
+    .image-banner{
+        
+        background-color: white;
+        font-size: 25px;
+        text-align: center;
+        font-style: italic;
+    }
+    .timeline-title{
+      font-weight: $boldweight;
+    }
+     .timeline-items{
+       line-height: 1.5;
+    list-style-position: inside;
+     margin:10px;
+      padding:5px 5px 5px 100px;
+      font-size:18px;
+    }}
+    footer{
+    .footernote{
+      
+      h2{
+        margin-top:35px;
+        letter-spacing: 2.8px;
+        font-family: $secondaryfont;
+        font-size: 35px;
+        text-align: center;
+      }
+      p{
+        margin-top:20px;
+        padding-left:180px;
+        font-size: 20px;
+        font-style: italic;
+      }
+    }
+    .learnmore{
+      margin-top:35px;
+      font-size: 25px;
+      text-align: center;
+      font-weight: $semibold;
+      }
+      .learnmore a{
+        text-decoration: none;
+      }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* clearfix: force an element not to collapse*/
+.clearfix:after{
+    content: "";
+    display: table;
+    clear: both;
+    }

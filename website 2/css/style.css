@@ -1,0 +1,271 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+/* prevent adjustment of font size after orientation changes in IE on window phone and in iOS*/
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+/*apply natural box layout on all elements*/
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/*   -----------body Tag--------*/
+body {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 16px;
+  font-weight: 300; }
+
+/*   -----------header Tag--------*/
+header {
+  height: 110px;
+  background-image: url(../images/images560x110.jpg);
+  position: relative; }
+  header h1, header h2 {
+    color: white;
+    padding-left: 2%;
+    font-weight: 700;
+    margin-left: 150px; }
+  header figure.logo {
+    position: absolute;
+    bottom: 0;
+    left: 2%; }
+  header h1 {
+    letter-spacing: 5px;
+    font-size: 2rem;
+    padding-top: 35px; }
+  header h2 {
+    font-size: 1rem; }
+
+/*--------------Nav---*/
+nav {
+  background-color: black;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3); }
+  nav ul li {
+    float: left;
+    width: 25%;
+    border-right: 1px solid rgba(0, 0, 0, 0.3); }
+  nav ul li:last-child {
+    border-right: none; }
+  nav ul li a {
+    display: block;
+    text-align: center;
+    font-weight: 700;
+    padding: .5rem 0;
+    color: #616A6B;
+    text-decoration: none;
+    transition: background 0.75s ease, color 0.75s ease; }
+  nav ul li.active a {
+    background-color: #cfe3f0;
+    /*this will darken the active element and different from other element*/ }
+  nav ul li a:hover {
+    background-color: #A9CCE3;
+    color: black; }
+
+/*-----------------Main-----------*/
+main {
+  /* ======================      this is used for index2.html====================*/
+  /*=====================this is used for index2.html====================*/
+  /*========================used for index3.html===========================*/
+  /*========================== used for index3.html=====================*/
+  /*==============================used for indexnew.html =========================================*/ }
+  main h1 {
+    font-size: 2rem;
+    margin: 1rem 0 0 2%;
+    color: #A9CCE3; }
+  main figure {
+    width: 96%;
+    margin-left: 2%; }
+  main figure img {
+    width: 100%; }
+  main p {
+    line-height: 130%;
+    margin: 0 2%; }
+  main article {
+    margin: 0.5rem 2%; }
+  main figure.photo-pd, main figure.photo-pd img {
+    width: 100%; }
+  main article.multicol {
+    column-count: 3;
+    -webkit-column-count: 3;
+    /*chrome/safari/opera*/
+    -moz-column-count: 3;
+    /*firefox*/
+    column-rule: 1px solid #616A6B;
+    -webkit-column-rule: 1px solid #616A6B;
+    /*chrome/safari/opera*/
+    -moz-column-rule: 1px solid #616A6B;
+    /*firefox*/
+    column-gap: 2%;
+    -webkit-column-gap: 2%;
+    /*chrome/safari/opera*/
+    -moz-column-gap: 2%;
+    /*firefox*/ }
+  main h2 {
+    margin: 2px 2%; }
+  main figure.photoA img, main figure.photoB img {
+    width: 100%; }
+  main figure.photoA {
+    width: 50%;
+    margin: 0 gutter;
+    float: right; }
+  main figure.photoB {
+    width: 96%;
+    margin: 0 gutter; }
+  main figure.photoA figcaption, main figure.photoB figcaption {
+    text-align: center;
+    font-weight: 700;
+    color: #616A6B; }
+
+/*===============================used for indexnew.html==========================================*/
+/*---------- Footer----*/
+footer {
+  background-color: #A9CCE3; }
+  footer p {
+    text-align: center;
+    padding: 2%;
+    color: #616A6B;
+    font-family: "Yanone Kaffeesatz", sans-serif;
+    font-size: 16px;
+    font-weight: 700; }
+
+/* clearfix: force an element not to collapse*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+@media only screen and (min-width: 35rem) {
+  /* -------------header----------*/
+  header {
+    height: 130px;
+    background-image: url(../images/images1024x130.jpg); }
+    header h1 {
+      padding-top: 50px; }
+
+  /*--------------main-----------*/
+  main {
+    max-width: 100rem;
+    margin: 0 auto; }
+    main figure {
+      width: 50%;
+      margin-right: 2%;
+      float: right; }
+    main article.multicol {
+      column-count: 2;
+      -webkit-column-count: 2;
+      /*chrome/safari/opera*/
+      -moz-column-count: 2;
+      /*firefox*/
+      column-rule: 1px solid #616A6B;
+      -webkit-column-rule: 1px solid #616A6B;
+      /*chrome/safari/opera*/
+      -moz-column-rule: 1px solid #616A6B;
+      /*firefox*/
+      column-gap: 2%;
+      -webkit-column-gap: 2%;
+      /*chrome/safari/opera*/
+      -moz-column-gap: 2%;
+      /*firefox*/ }
+    main figure.photoB {
+      width: 75%;
+      float: right; } }
+@media only screen and (min-width: 60rem) {
+  /*-------------- navigation------------------*/
+  header {
+    background-image: url(../images/images1600x130.jpg); }
+
+  /*----Nav--------*/
+  nav ul {
+    margin-left: 2%;
+    border-left: 1px solid rgba(0, 0, 0, 0.3); }
+  nav ul li {
+    width: auto; }
+  nav ul li:last-child {
+    border-right: 1px solid rgba(0, 0, 0, 0.3); }
+  nav ul li a {
+    padding: .5rem 1rem; }
+
+  /*----------main--------*/
+  main figure.photoB {
+    width: 50%; } }

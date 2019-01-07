@@ -1,0 +1,37 @@
+/* -------------header----------*/
+
+header{
+    height:130px;
+    background-image: url(../images/images1024x130.jpg);
+    h1{
+        padding-top:50px;
+    }
+}
+
+/*--------------main-----------*/
+main{
+    max-width: 100rem;
+    margin:0 auto;
+    figure{
+        width:50%;
+        margin-right:$gutter;
+        float: right;
+    }
+    article.multicol{
+        column-count: 2;
+       -webkit-column-count: 2;  /*chrome/safari/opera*/
+        -moz-column-count: 2;    /*firefox*/
+
+        column-rule: 1px solid $secondarycolor;
+      -webkit-column-rule: 1px solid $secondarycolor; /*chrome/safari/opera*/
+      -moz-column-rule: 1px solid $secondarycolor;    /*firefox*/
+        
+      column-gap: $gutter;
+      -webkit-column-gap: $gutter;  /*chrome/safari/opera*/
+      -moz-column-gap: $gutter;      /*firefox*/
+    }
+    figure.photoB{
+        width:75%;
+        float: right;
+    }
+}

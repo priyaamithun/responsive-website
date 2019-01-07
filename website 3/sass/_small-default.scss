@@ -1,0 +1,147 @@
+/* prevent adjustment of font size after orientation changes in IE on window phone and in iOS*/
+html{
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/*apply natural box layout on all elements*/
+*{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/*-------------------Header-----------------*/
+header{
+    font-family:$defaultfont;
+    font-weight:$lightweight;
+   
+    padding:$gutter;
+    background-color: $primarycolor;
+    h1, h2{
+        color:goldenrod;
+        font-size: 25px;
+    }
+
+}
+
+/*--------------nav-------------*/
+nav{
+    background-color: goldenrod;
+    ul li{
+        float: left;
+        width:10%;
+        text-align: center;
+        border-right: 1px solid rgba(0, 0, 0, 0.3);
+        padding:0.5px;
+}
+    ul  li a{
+        display: block;
+        padding:3%; 
+        font-weight: bold;   
+    }
+    a{
+        color: #000;
+        text-decoration: none;
+    }
+    ul li:hover{
+        background-color:hsla(0, 100%, 30%, .1);
+    }
+}
+/*----------------------main-----------------*/
+main{
+    max-width: 60rem;
+    min-height: 20rem;
+    h1{
+        font-size:  2rem;
+        margin:1.5rem 0 .5rem 0;
+        color:$primarycolor;
+    }
+    ul li{
+        width:50px;
+        height:50px;
+        background-image: url('../Images/clean-social-icons.jpg');
+        background-position: 0 0;
+    }
+    ul li blue{
+        background-position: 0 -100px;
+    }
+    ul li bee{
+        background-position: -100px -100px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------footer------------------*/
+footer{
+    background-color: $primarycolor;
+    text-align: center;
+    h4{
+
+        color:goldenrod;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* clearfix: force an element not to collapse*/
+.clearfix:after{
+    content: "";
+    display: table;
+    clear: both;
+    }

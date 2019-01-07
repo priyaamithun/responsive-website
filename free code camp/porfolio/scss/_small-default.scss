@@ -1,0 +1,291 @@
+/* prevent adjustment of font size after orientation changes in IE on window phone and in iOS*/
+html{
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/*apply natural box layout on all elements*/
+*{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* body*/
+body{
+    font-family: $font-family;
+    font-size: 20px;
+    background-color: grey;
+    position: relative;
+    margin: 0;
+    height:100%;
+    
+    
+}
+
+/* nav*/
+nav{
+
+background-color:$navcolor;
+position: fixed;
+    height: 100px;
+    width:100%;
+ 
+.button-menu #menuicons{
+      margin:50px;  
+      float: right;
+}
+
+.button-menu .responsive {
+    position: relative;
+    
+}
+
+.button-menu .rightMenu {
+    display: none;
+    
+}
+
+
+.rightBtn{
+
+    margin-left: 200px;
+
+    display: block;
+    border-radius:0px;
+    background-color: transparent;
+    border:none;
+    font-size: 15px;
+}
+.rightBtn:hover{
+    background-color:$navcolor;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.rightBtn a{
+    text-decoration: none;
+    color: grey;
+}
+
+.button-menu #active{
+
+    color: grey;
+    background-color: lightgray;
+}    
+
+.button-menu .LeftBtn{
+    float: left;
+    padding-top:25px;
+    padding-left:10px;
+    font-size: 25px;
+    color:white;
+    text-decoration: none;
+
+}
+
+#menu {
+    width:1.4em;
+    display: block;
+    background:#ddd;
+    font-size:1.35em;
+    text-align: center;
+}
+#nav.js {
+    display: none;
+}
+ul {
+    width:100%;
+    list-style:none;
+}
+li {
+    width:100%;
+    border-right:none;
+}
+}   
+main{
+    background-color: lightgray;
+    //box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+    
+.banner{
+    padding-top:10px;
+    background-color:#343333;
+    color: white;
+    height: 600px; 
+p{
+    text-align: center;
+    font-size: 29px;
+    color:white;
+    padding-top:100px;
+}
+
+.tagline{
+    padding-top:20px;
+}
+   
+}
+.profileImg{
+
+    height:210px;
+    width:210px;
+}
+.profile{
+    
+    background-color:#343333;
+    
+}
+.profile img{
+    
+    margin:50px 50px 30px 55px;
+    border-radius: 50%;
+}
+h1{
+    font-size: 30px;
+    color: grey;
+    text-align: center;
+    margin-top:30px;
+    //margin:70px 130px 0px 80px;
+    
+}
+.line2{
+    height:5px;
+    background-color:#2C2C2C;
+}
+.portfolio{
+
+    background-color:lightgray;
+    
+}
+figure.porfolio1{
+    width:100%-$gutterdbl; /* here we are subracting guttervalue (total width:104) so that it will not exceed the margin*/ 
+    margin:1rem $gutter;
+    
+    
+  } /* if you want change the banner size it will help*/
+  figure.porfolio1 img{
+      
+      width:100%;
+      height:400px;
+    }   
+ .contact h1{
+    margin:10px 10px 0px 100px;
+    
+ } 
+ .line{
+    margin-left:70px;
+    margin-right:70px;
+    height:5px;
+    background-color: #2C2C2C; 
+
+ }
+ .col,label{
+     margin:5px;
+ }
+ #btnSubmit{
+     margin-left:150px;
+     margin-bottom:30px;
+    
+ }
+ .contact-details{
+margin:50px;
+ }
+.contact-details p{
+padding:10px;
+
+}
+}
+
+footer{
+    
+    bottom: 0px;
+    padding-bottom: 0;
+    color:white;
+footer-note{
+    margin:5px;
+}
+   .footer-content h1{
+        
+        margin:10px 100px 10px 120px;
+    }
+    .footer-content p{
+        margin:10px 100px 10px 120px;
+        
+    }
+    
+    .footer-note  #social-icons{
+      padding:10px;
+      border:1px solid white;
+      border-radius: 20px;
+      
+    
+    }
+    .footer-note .icons{
+        text-align: center;
+    }
+    .footer-note .icons a i:hover{
+      background-color: white;
+      color:black;
+    }
+   
+   
+   
+    .footer-rights {
+        height:50px;
+        width:100%;
+        background-color:$navcolor;
+    }
+    .footer-rights p{
+        color: grey;
+        padding:20px 10px 0px 34px;
+        margin:10px;
+    
+    
+    }
+    
+}
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* clearfix: force an element not to collapse*/
+.clearfix:after{
+    content: "";
+    display: table;
+    clear: both;
+    }

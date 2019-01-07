@@ -1,0 +1,53 @@
+
+/*------------ body----------*/
+
+
+   main{
+     max-width: 60rem;
+    margin:50px auto;
+    box-shadow: 0 0 10px #000000;
+
+ }
+.blog{
+    max-width: 60rem;
+    margin:0 auto;
+}
+#blogs{
+    margin:5px;
+    text-align: center;
+}
+
+
+
+/*-------------- navigation------------------*/
+
+nav{
+    ul{
+        margin-left:$gutter;
+        border-left:1px solid rgba(0, 0, 0, 0.3);
+    }
+    ul li {
+        width:auto;
+    }
+    ul li:last-child{
+        border-right:1px solid rgba(0, 0, 0, 0.3)
+    }
+    ul li a{
+        padding: .5rem 1rem;
+    }
+}
+
+/*----------- main*------------*/
+main{
+    figure.photo {
+        width:25%-$gutterdbl;
+        float: left;
+    }
+    div.blog article{
+        float: left;
+        width:33.3%-$gutterdbl;
+    }
+h2{
+    clear:both;
+}
+}

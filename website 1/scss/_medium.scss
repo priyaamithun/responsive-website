@@ -1,0 +1,11 @@
+/*--------------------- Main---------------*/
+main{
+    figure.photo {
+        width:50%-$gutterdbl;
+        float: left;
+    }
+    div.blog article{
+        float: left;
+        width:50%-$gutterdbl;
+    }
+}

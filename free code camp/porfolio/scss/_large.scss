@@ -1,0 +1,210 @@
+/* body*/
+
+nav{
+    height: 100px;
+    width:100%;
+    background-color:$navcolor;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(172, 166, 166, 0.19);
+    
+   .rightMenu{
+       margin-right:300px;
+   }
+
+.rightBtn{
+    margin:30px 15px 0px 0px;
+
+    float:right;
+    border-radius:0px;
+    color: grey;
+    background-color: transparent;
+    border:none;
+    font-size: 15px;
+}
+.rightBtn:hover{
+    background-color:$navcolor;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+.button-menu #active{
+
+    color: grey;
+    background-color: lightgray;
+}    
+
+.button-menu .LeftBtn{
+    float: left;
+    padding-top:25px;
+    padding-left:300px;
+    font-size: 25px;
+    color:white;
+    text-decoration: none;
+
+}
+.button-menu #menuicons{
+    display: none;
+  }
+
+ 
+}  
+main{
+    max-width: 60rem;
+    margin:0px auto;
+ 
+    
+    .banner{  
+        padding-top:10px;
+        background-color:#343333;
+        color: white;
+        height: 450px; 
+     p{
+        font-size: 25px;
+        width:40%;
+        float: left;
+        margin-top:50px;
+        margin-left:100px;   
+    }
+    .tagline{
+        margin-top:0px;
+    }
+    figure.profile.profileImg{
+       margin-top:10px;
+        float: right;
+        width:35%;
+    }
+    .profileImg{
+        height:250px;
+        width:250px;
+    }
+   
+    }
+    .portfolio{
+        background-color:lightgray;
+        
+    }
+    h1{
+        font-size: 30px;
+        color: grey;
+        margin:30px 10px 0px 10px;
+        text-align: center;
+    }
+    
+    figure.porfolio1{
+        float: left;
+        width:50%-$gutterdbl;
+         /* here we are subracting guttervalue (total width:104) so that it will not exceed the margin*/ 
+        
+        
+        
+      } /* if you want change the banner size it will help*/
+      figure.porfolio1 img{
+       
+          width:100%;
+          height:400px;
+        }
+           .contact h1{
+               margin-top:40px;
+               margin-left:20px;
+            
+           } 
+           .contactmenu{
+               display: inline-block;
+           }          
+    
+           .needs-validation{
+               margin-left:90px;
+               
+               
+            
+    
+           }
+           .col label{
+               margin:10px;
+               float:left;
+            
+           }
+           #btnSubmit{
+            margin-left:90px; 
+            
+            
+           }
+    .contact-details{
+width:50%;
+
+    float:right;
+    }
+    
+    
+    
+        }    
+
+
+footer{
+    bottom: 0;
+    background-color:#343333;
+    margin:0px;
+    color:white;
+
+    width:100%;
+    //box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(172, 166, 166, 0.19);
+    box-shadow: 0 4px 2px -2px #000000;  
+
+   .footer-content{
+    float: left;
+    font-size:25px;
+        margin:0px 100px 10px 180px;
+        
+        padding-top:50px;
+        
+    }
+  
+    
+    .footer-note  #social-icons{
+
+      border:1px solid white;
+      border-radius: 25px;
+    
+    }
+    .icons{
+        float: left;
+        margin-top:2px;
+        font-size: 25px;
+        padding-top:50px;
+        text-align: center;
+    }
+   
+    .footer-rights {
+        text-align: center;
+        height:50px;
+        width:100%;
+        background-color:$navcolor;
+    }
+    .footer-rights p{
+        color: grey;
+        padding:20px 10px 0px 25px;
+        margin:10px;
+    
+    
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* clearfix: force an element not to collapse*/
+.clearfix:after{
+    content: "";
+    display: table;
+    clear: both;
+    }

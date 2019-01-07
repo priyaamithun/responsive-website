@@ -1,0 +1,201 @@
+/* prevent adjustment of font size after orientation changes in IE on window phone and in iOS*/
+html{
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/*apply natural box layout on all elements*/
+*{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*   -----------body Tag--------*/
+body{
+    font-family: $defaultfont;
+    font-size: 16px;
+    font-weight: $lightweight;
+}
+
+/*   -----------header Tag--------*/
+header{
+    height: 110px;
+    background-image: url(../images/images560x110.jpg);
+    position: relative;
+    h1,h2{
+        
+        color:lighten($secondarycolor,60%); 
+        padding-left: $gutter;
+        font-weight: $boldweight;
+        margin-left:150px;
+
+    }
+    figure.logo{
+position: absolute;
+bottom:0;
+left:$gutter;
+    }
+    h1{
+        letter-spacing: 5px;
+        font-size:  2rem;
+        padding-top:35px;
+    }
+    h2{
+        font-size: 1rem;
+    }
+
+}
+
+/*--------------Nav---*/
+nav{
+    background-color: black;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+
+ul li{
+    float: left;
+    width:25%;
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+}
+ul li:last-child{
+    border-right:none;
+}
+ul li a{
+    display: block;
+    text-align: center;
+    font-weight: $boldweight;
+    padding:.5rem 0;
+    color:#616A6B;
+    text-decoration: none;
+    transition: background 0.75s ease, color 0.75s ease; //this will prevent when hovering of element sudden changes of color
+}
+
+ul li.active a{
+    background-color: lighten($primarycolor,10%); /*this will darken the active element and different from other element*/
+}
+ul li a:hover{
+    background-color: $primarycolor;
+    color:black;
+}
+
+
+}
+
+/*-----------------Main-----------*/
+main{
+     
+h1{
+    font-size: 2rem;
+    margin:1rem 0 0 $gutter;
+    color:$primarycolor;   
+}
+/* ======================      this is used for index2.html====================*/
+figure{
+    width:96%;
+    margin-left: $gutter;
+}
+figure img{
+    width:100%;
+}
+/*=====================this is used for index2.html====================*/
+p{
+    line-height: 130%;
+    margin: 0 $gutter;
+}
+article{
+    margin:.5rem $gutter;
+}
+figure.photo-pd, figure.photo-pd img{
+    width:100%;
+    
+}
+/*========================used for index3.html===========================*/
+ article.multicol{
+    column-count: 3;
+   -webkit-column-count: 3;  /*chrome/safari/opera*/
+    -moz-column-count: 3;    /*firefox*/
+
+     column-rule: 1px solid $secondarycolor;
+   -webkit-column-rule: 1px solid $secondarycolor; /*chrome/safari/opera*/
+   -moz-column-rule: 1px solid $secondarycolor;    /*firefox*/
+    
+   column-gap: $gutter;
+   -webkit-column-gap: $gutter;  /*chrome/safari/opera*/
+   -moz-column-gap: $gutter;      /*firefox*/
+ }
+
+/*========================== used for index3.html=====================*/
+
+
+/*==============================used for indexnew.html =========================================*/
+h2{
+margin:2px $gutter;
+}
+
+figure.photoA img, figure.photoB img{
+    width:100%;
+    }
+    
+figure.photoA{
+    width:50%;
+    margin:0 gutter;
+    float:right;
+}
+figure.photoB{
+    width:96%;
+    margin:0 gutter;
+
+}
+
+figure.photoA figcaption, figure.photoB figcaption{
+    text-align: center;
+    font-weight: $boldweight;
+    color:$secondarycolor;
+
+}
+}
+/*===============================used for indexnew.html==========================================*/
+
+
+
+
+
+
+
+
+
+
+/*---------- Footer----*/
+footer{
+    background-color: $primarycolor;
+    p{
+        text-align: center;
+       padding:$gutter;
+        color: $secondarycolor;
+        font-family: $defaultfont;
+        font-size: 16px;
+        font-weight: $boldweight;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* clearfix: force an element not to collapse*/
+.clearfix:after{
+    content: "";
+    display: table;
+    clear: both;
+    }
